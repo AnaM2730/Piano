@@ -8,8 +8,7 @@ const playNote = (note) => {
 
 /* click mouse */
 const handleMouseDown = (key) => { /* muda de estilo/background */
-    /* playNote(); */
-    key.getAttribute('data-note')
+    playNote(key.getAttribute('data-note'));    
     
     if (key.className.includes('preta')) {
         /* key.style.background = 'linear-gradient(#222, black)';
