@@ -115,18 +115,18 @@ h1{
     user-select: none; /* tira a seleção do texto */
 }
 
-.piano_keys .branca:nth-child(1){ /* quinro filho (tecla) */
+.piano_keys .branca:nth-child(1){ /* quinto filho (tecla) */
     margin-right: 0;
 }
-.piano_keys .branca:nth-child(5){ /* quinro filho (tecla) */
+.piano_keys .branca:nth-child(5){ /* quinto filho (tecla) */
     margin-right: 20px;
 }
 
-.piano_keys .branca:nth-child(12){ /* quinro filho (tecla) */
+.piano_keys .branca:nth-child(12){ /* quinto filho (tecla) */
     margin-right: 20px;
 }
 
-.piano_keys .branca:nth-child(17){ /* quinro filho (tecla) */
+.piano_keys .branca:nth-child(17){ /* quinto filho (tecla) */
     margin-right: 20px;
 }
 
