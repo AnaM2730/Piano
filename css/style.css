@@ -134,6 +134,10 @@ body {
     height: 148px;
 }
 
+.disabled-keys span {
+    opacity: 0;
+}
+
 
 
 
