@@ -47,7 +47,7 @@ body {
 
 .switcher__button {
     height: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1; /* width */
     background-color: #ddd;
     border-radius: 25px;
 }
