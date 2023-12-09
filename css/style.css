@@ -128,17 +128,11 @@ body {
     margin-right: 20px;
 }
 
-.preta-pressionada{
+.black--pressed {
     background: linear-gradient(#222, black);
     border-bottom: none;
     height: 148px;
 }
-
-
-
-
-
-
 
 
 
