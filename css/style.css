@@ -1,24 +1,17 @@
-@font-face {
-    font-family: "Enoway";
-    src: url(../fonte/Enoway-Personal\ Use.otf);   
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: Enoway;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: #ccc;
+body {
+    background-color: #ebebeb;
 }
 
-h1{
-    font-size: 6em;
-    font-family: Enoway;
-}
-
-.piano{
+.piano {
     background-color: #121212;
     width: 1000px;
     height: 400px;
@@ -30,7 +23,7 @@ h1{
     justify-content: space-between;
 }
 
-.controls{
+.controls {
     color: rgba(255, 255, 255, 0.8);
     padding: 30px;
     display: flex;
@@ -38,9 +31,9 @@ h1{
     justify-content: space-between;
 }
 
-.controls h1{
-    font-size: 2.4rem;
-    font-weight: 500; 
+.controls h1 {
+    font-weight: 500;
+    font-size: 1.4rem;
 }
 
 .switcher{
@@ -53,25 +46,27 @@ h1{
     justify-content: flex-start; /* muda a bolinha */
 }
 
-.switcher_button{
+.switcher__button {
     height: 100%;
     aspect-ratio: 1/1; /* substitui width */
     background-color: #ddd;
     border-radius: 25px;
 }
 
-.switcher--active{
+
+
+.switcher--active {
     background-color: #006eff;
     justify-content: flex-end;
 }
 
-.checkbox_label{
+.checkbox__label {
     display: flex;
     gap: 15px; /* espaçamento */
 }
 
 /* TECLAS */
-.piano_keys{
+.piano__keys{
     width: 940px;
     height: 300px;
     background-color: #181818;
@@ -80,7 +75,7 @@ h1{
     display: flex;
 }
 
-.branca{
+.white {
     background-color: white;
     flex-grow: 1; /* crescimento dos itens  */
     border-radius: 5px;
@@ -90,7 +85,7 @@ h1{
     z-index: 1;
 }
 
-.preta{
+.black {
     width: 40px;
     background: linear-gradient(black, #333);
     height: 150px;
@@ -101,32 +96,35 @@ h1{
     color: rgba(255, 255, 255, 0.3);
 }
 
-.key span{
-    position: absolute;
+
+.key span {
     font-weight: 600;
+    position: absolute;
+    transition-duration: 300ms;
 }
 
-.key{
-    display: flex;
+.key {
     position: relative;
+    display: flex;
     align-items: flex-end;
     justify-content: center;
     padding-bottom: 8px;
     user-select: none; /* tira a seleção do texto */
 }
 
-.piano_keys .branca:nth-child(1){ /* quinto filho (tecla) */
-    margin-right: 0;
+.piano__keys .white:nth-child(1) {
+    margin-left: 0;
 }
-.piano_keys .branca:nth-child(5){ /* quinto filho (tecla) */
+
+.piano__keys .white:nth-child(5) {
     margin-right: 20px;
 }
 
-.piano_keys .branca:nth-child(12){ /* quinto filho (tecla) */
+.piano__keys .white:nth-child(12) {
     margin-right: 20px;
 }
 
-.piano_keys .branca:nth-child(17){ /* quinto filho (tecla) */
+.piano__keys .white:nth-child(17) {
     margin-right: 20px;
 }
 

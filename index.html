@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Piano | Manual</title>
+    <title>Piano | Manual do Dev</title>
 </head>
 <body>
     
@@ -14,13 +14,14 @@
 
             <h1>Piano</h1>
             
-            <label class="checkbox_label">
-            Mostrar chaves
-            <span class="switcher switcher--active">
-                <span class="switcher_button"></span><!-- fim switcher_button -->
-            </span><!-- fim switcher -->
+            <label class="checkbox__label">
+                Show keys
+                <span class="switcher">
+                    <span class="switcher__button"></span>
+                </span><!-- fim switcher_button -->
+           <!-- fim switcher -->
 
-            <input type="checkbox" class="checkbox" hidden  >
+           <input type="checkbox" class="checkbox__keys" hidden>
             </label><!-- 'hidden' não aparece -->
         </section> <!-- fim controls -->
 
@@ -28,30 +29,30 @@
         <section class="piano_keys">
             
             <!-- div.key.branca.preta[data-nota=$]*24 -->
-             <div class="key branca" data-nota="1"><span>TAB</span></div>
-              <div class="key preta" data-nota="2"><span>1</span></div>
-             <div class="key branca" data-nota="3"><span>q</span></div>
-              <div class="key preta" data-nota="4"><span>2</span></div>
-             <div class="key branca" data-nota="5"><span>w</span></div>
-             <div class="key branca" data-nota="6"><span>e</span></div>
-              <div class="key preta" data-nota="7"><span>4</span></div>
-             <div class="key branca" data-nota="8"><span>r</span></div>
-              <div class="key preta" data-nota="9"><span>5</span></div>
-            <div class="key branca" data-nota="10"><span>t</span></div>
-             <div class="key preta" data-nota="11"><span>6</span></div>
-            <div class="key branca" data-nota="12"><span>y</span></div>
-            <div class="key branca" data-nota="13"><span>u</span></div>
-             <div class="key preta" data-nota="14"><span>8</span></div>
-            <div class="key branca" data-nota="15"><span>i</span></div>
-             <div class="key preta" data-nota="16"><span>9</span></div>
-             <div class="key branca" data-nota="17"><span>o</span></div>
-            <div class="key branca" data-nota="18"><span>p</span></div>
-             <div class="key preta" data-nota="19"><span>-</span></div>
-            <div class="key branca" data-nota="20"><span>[</span></div>
-             <div class="key preta" data-nota="21"><span> = </span></div>
-            <div class="key branca" data-nota="22"><span>]</span></div>
-             <div class="key preta" data-nota="23"><span> =</span></div>
-            <div class="key branca" data-nota="24"><span>\</span></div>
+            div class="key white" data-note="1"><span>TAB</span></div>
+            <div class="key black" data-note="2"><span>1</span></div>
+            <div class="key white" data-note="3"><span>q</span></div>
+            <div class="key black" data-note="4"><span>2</span></div>
+            <div class="key white" data-note="5"><span>w</span></div>
+            <div class="key white" data-note="6"><span>e</span></div>
+            <div class="key black" data-note="7"><span>4</span></div>
+            <div class="key white" data-note="8"><span>r</span></div>
+            <div class="key black" data-note="9"><span>5</span></div>
+            <div class="key white" data-note="10"><span>t</span></div>
+            <div class="key black" data-note="11"><span>6</span></div>
+            <div class="key white" data-note="12"><span>y</span></div>
+            <div class="key white" data-note="13"><span>u</span></div>
+            <div class="key black" data-note="14"><span>8</span></div>
+            <div class="key white" data-note="15"><span>i</span></div>
+            <div class="key black" data-note="16"><span>9</span></div>
+            <div class="key white" data-note="17"><span>o</span></div>
+            <div class="key white" data-note="18"><span>p</span></div>
+            <div class="key black" data-note="19"><span>-</span></div>
+            <div class="key white" data-note="20"><span>[</span></div>
+            <div class="key black" data-note="21"><span>=</span></div>
+            <div class="key white" data-note="22"><span>]</span></div>
+            <div class="key black" data-note="23"><span>&larr;</span></div>
+            <div class="key white" data-note="24"><span>\</span></div>
 
         </section> <!-- fim section piano_keys -->
         
@@ -59,6 +60,6 @@
     </section> <!-- fim section piano -->
 
 
-    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
